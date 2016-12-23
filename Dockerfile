@@ -1,7 +1,7 @@
-FROM nginx
+FROM node
 MAINTAINER lingyb@jpush.cn
 
-RUN apt-get update && apt-get install -y nodejs npm
+RUN apt-get update && apt-get install -y nginx
 
 COPY ./package.json /usr/share/nginx/html
 WORKDIR /usr/share/nginx/html
