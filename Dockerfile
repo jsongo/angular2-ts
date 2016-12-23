@@ -1,7 +1,7 @@
 FROM nginx
 MAINTAINER lingyb@jpush.cn
 
-RUN apt-get install -y curl
+RUN apt-get update && apt-get install -y curl
 RUN curl -L http://npmjs.org/install.sh | sudo sh
 RUN npm install
 
